@@ -303,7 +303,7 @@ impl PandocOption {
             TitlePrefix(ref s)       => pandoc.args(&[format!("--title-prefix={}", s)]),
             Css(ref url)             => pandoc.args(&[format!("--css={}", url)]),
             ReferenceOdt(ref file)   => pandoc.args(&[format!("--reference-odt={}", file.display())]),
-            ReferenceDocx(ref file)  => pandoc.args(&[&format!("--reference-docx={}", file.display())]),
+            ReferenceDocx(ref file)  => pandoc.args(&[&format!("--reference-doc={}", file.display())]),
             EpubStylesheet(ref file) => pandoc.args(&[&format!("--epub-stylesheet={}", file.display())]),
             EpubCoverImage(ref file) => pandoc.args(&[&format!("--epub-cover-image={}", file.display())]),
             EpubMetadata(ref file)   => pandoc.args(&[&format!("--epub-metadata={}", file.display())]),
